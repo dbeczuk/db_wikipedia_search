@@ -104,8 +104,8 @@ transition: all 0.2s ease-in;
 position: absolute;
 background: #e38585;
 display: block;
-height: 30px;
-width: 30px;
+/* height: 30px;
+width: 30px; */
 color: #fff;
 border: none;
 border-radius: 50%;
