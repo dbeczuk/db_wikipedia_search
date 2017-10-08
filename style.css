@@ -1,0 +1,253 @@
+/* Imports */
+@import url('//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Main */
+
+.abs-center {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #454545;
+  color: #fff;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  color: #4b4b4b
+}
+textarea, input, button { outline: none; }
+#app-title h3 {
+  text-transform: uppercase;
+  line-height: 1em;
+}
+.main-title {
+  transition: top 0.2s linear;
+  top: 44%;
+  display: inline-block;
+  margin-bottom: 1%;
+}
+#randomBtn {
+width: 30px;
+height: 30px;
+display: block;
+z-index: 3;
+float:left;
+}
+#search-wrap {
+  width:0px;
+  height:0px;
+  margin: 1% auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 50%);
+}
+#output-wrap {
+display: block;
+position: relative;
+top: 50px;
+text-align: left;
+}
+#output-wrap > ul {
+padding: 0;
+width: 80%;
+margin: 0 auto;
+}
+
+#output-wrap > ul li {
+list-style: none;
+background-color: #fff;
+color: #454545;
+padding: 10px;
+margin-bottom: 10px;
+width: 31%;
+float: left;
+height: 200px;
+margin-left: 10px;
+}
+
+.search-field {
+transition: all 0.2s ease-in;
+color: #fff;
+position: absolute;
+padding: 0px;
+width: 30px;
+height: 30px;
+background-color: #e38585;
+text-align: center;
+border-radius: 50px;
+border: 3px solid #fff;
+z-index: -1;
+top: -18px;
+left: -18px;
+}
+.searchmatch {
+    color: #E38585;
+}
+/* .search-field:focus {  
+-webkit-animation: focusA 1.0s infinite; /* Safari 4+ */
+/* -moz-animation:    focusA 1.0s infinite; /* Fx 5+ */
+/* -o-animation:      focusA 1.0s infinite; /* Opera 12+ */
+/* animation:         focusA 1.0s infinite; /* IE 10+, Fx 29+ */ 
+/*transition: all 0.2s ease-in-out;
+}*/
+
+.search-btn {
+transition: all 0.2s ease-in;
+position: absolute;
+background: #e38585;
+display: block;
+height: 30px;
+width: 30px;
+color: #fff;
+border: none;
+border-radius: 50%;
+left: -15px;
+top: -15px;
+margin: 0px;
+padding: 0px;
+cursor: pointer;
+}
+
+#search-btn i {
+  font-family: "FontAwesome";
+  font-size: 18px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+#random-btn-wrap {
+  transition: all 0.2s ease-in-out;
+}
+
+.randomLink {
+transition:all 0.2s ease-in-out;
+overflow: hidden;
+background: #e38585;
+display: block;
+height: 30px;
+width: 30px;
+color: #fff;
+border-radius: 50%;
+margin: 0px;
+padding: 0px;
+vertical-align: middle;
+border: none;
+position: absolute;
+z-index: -10;
+}
+.randomLink .icon-wrap {
+  transition: top 0.2s ease-in;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  margin: 0px;
+  line-height: 1em;
+  animation: randomIcon 4s ease-in-out 2s infinite;
+}
+
+.icon-wrap i:before {
+width: 30px;
+height: 30px;
+display: table-cell;
+vertical-align: middle;
+}
+
+.close {
+  position: absolute;
+  transition: all 0.2s ease-in;
+  top: 50%;
+  left: 0px;
+  display: block;
+  opacity: 0;
+  cursor: pointer;
+}
+.reveal-x {
+transition: all 0.2s ease-in;
+position: absolute;
+top: 50%;
+left: 90px;
+display: block;
+opacity: 1;
+}
+.reveal-me {
+  transition: all 0.2s ease-in; 
+  width: 200px;
+  left: -100px;
+  transform-origin: center center;
+}
+
+.move-me-right {
+  transition: all 0.2s ease-in;
+  left: 120px;
+  border: 3px solid #fff;
+  top: -18px;
+}
+
+.move-me-left {
+  transition: all 0.2s ease-in;
+left: -135px;
+border: 3px solid #fff;
+border-radius: 50%;
+top: 0;
+background-color: #fff;
+}
+
+.animate {
+  transition: opacity 0.2s ease-in;
+  opacity: 1;
+}
+.move-me-right i {
+  cursor: default;
+}
+
+.move-search-wrap {
+  transition: all .2s ease-in;
+  top: 50px !important;
+}
+
+.rotate {
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.fa-slack {
+  color: transparent;
+}
+@keyframes randomIcon {
+  0% {top: 0px;}
+  5% {top: -300px;}
+  10% {top: -30px;}
+  15% {top: -300px;}
+  20% {top: -60px;}
+  25% {top: -300px;}
+  30% {top: -90px;}
+  35% {top: -300px;}
+  40% {top: -120px;}
+  50% {top: -150px;} 
+  60% {top: -180px;}
+  70% {top: -210px;}
+  80% {top: -240px;}
+  90% {top: -315px;}
+  91% {top: -315px;}
+  92% {top: -315px;}
+  93% {top: -315px;}
+  94% {top: -315px;}
+  95% {top: -315px;}
+  96% {top: -315px;}
+  97% {top: -315px;}
+  98% {top: -315px;}
+  99% {top: -315px;}
+  100% {top:-315px;}
+}
